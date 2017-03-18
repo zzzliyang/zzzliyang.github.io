@@ -6,19 +6,25 @@
   <title>spring-boot | Yuzu House</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="AboutIn this post I will show the steps of a quick Spring Boot web application :)
-Generate Spring Boot starter project">
+Generate Spring Boot starter projectGo to Spring Boot Starter.
+
+Click “Generate Project” to download Spring Boot proje">
 <meta property="og:type" content="article">
 <meta property="og:title" content="spring-boot">
 <meta property="og:url" content="https://zzzliyang.github.io/2017/03/18/spring-boot/index.html">
 <meta property="og:site_name" content="Yuzu House">
 <meta property="og:description" content="AboutIn this post I will show the steps of a quick Spring Boot web application :)
-Generate Spring Boot starter project">
+Generate Spring Boot starter projectGo to Spring Boot Starter.
+
+Click “Generate Project” to download Spring Boot proje">
 <meta property="og:image" content="https://zzzliyang.github.io/images/Boot Starter.PNG">
-<meta property="og:updated_time" content="2017-03-18T01:29:58.514Z">
+<meta property="og:updated_time" content="2017-03-18T02:07:49.778Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="spring-boot">
 <meta name="twitter:description" content="AboutIn this post I will show the steps of a quick Spring Boot web application :)
-Generate Spring Boot starter project">
+Generate Spring Boot starter projectGo to Spring Boot Starter.
+
+Click “Generate Project” to download Spring Boot proje">
 <meta name="twitter:image" content="https://zzzliyang.github.io/images/Boot Starter.PNG">
   
     <link rel="alternate" href="/atom.xml" title="Yuzu House" type="application/atom+xml">
@@ -57,9 +63,9 @@ Generate Spring Boot starter project">
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://zzzliyang.github.io"></form>
@@ -91,12 +97,18 @@ Generate Spring Boot starter project">
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="About"><a href="#About" class="headerlink" title="About"></a>About</h2><p>In this post I will show the steps of a quick Spring Boot web application :)</p>
-<h2 id="Generate-Spring-Boot-starter-project"><a href="#Generate-Spring-Boot-starter-project" class="headerlink" title="Generate Spring Boot starter project"></a>Generate Spring Boot starter project</h2><p><img src="/images/Boot Starter.PNG" alt=""></p>
+<h2 id="Generate-Spring-Boot-starter-project"><a href="#Generate-Spring-Boot-starter-project" class="headerlink" title="Generate Spring Boot starter project"></a>Generate Spring Boot starter project</h2><p>Go to <a href="https://http://start.spring.io/" target="_blank" rel="external">Spring Boot Starter</a>.</p>
+<p><img src="/images/Boot Starter.PNG" alt="Spring Boot Starter"></p>
+<p>Click “Generate Project” to download Spring Boot project skeleton. Unzip and import project to Intellij.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">dependencies &#123;</div><div class="line">	compile(&apos;org.springframework.boot:spring-boot-starter-data-jpa&apos;)</div><div class="line">	compile(&apos;org.springframework.boot:spring-boot-starter-data-rest&apos;)</div><div class="line">	compile(&apos;org.springframework.boot:spring-boot-starter-web&apos;)</div><div class="line">	testCompile(&apos;org.springframework.boot:spring-boot-starter-test&apos;)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>These “starters” in build.gradle are important in Spring Boot. It allows you to define “one” dependency which implicitly requires all other necessary dependencies.  </p>
+<p>BlogDemoApplication is the starting point of this Spring Boot project.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">@SpringBootApplication</div><div class="line">public class BlogDemoApplication &#123;</div><div class="line"></div><div class="line">	public static void main(String[] args) &#123;</div><div class="line">		SpringApplication.run(BlogDemoApplication.class, args);</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zzzliyang.github.io/2017/03/18/spring-boot/" data-id="cj0eimyry00010c99q8qkijsc" class="article-share-link">Share</a>
+      <a data-url="https://zzzliyang.github.io/2017/03/18/spring-boot/" data-id="cj0em83mk00013099rd7rcl3m" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -107,7 +119,7 @@ Generate Spring Boot starter project">
   
   
     <a href="/2017/03/18/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
+      <strong class="article-nav-caption">Ancien</strong>
       <div class="article-nav-title">Hello World</div>
     </a>
   
@@ -140,7 +152,7 @@ Generate Spring Boot starter project">
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Articles récents</h3>
     <div class="widget">
       <ul>
         
@@ -165,7 +177,7 @@ Generate Spring Boot starter project">
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2017 Liyang<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
