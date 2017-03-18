@@ -48,9 +48,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://zzzliyang.github.io"></form>
@@ -94,11 +94,16 @@
 <p>Add an index.html in resources/static/ folder. This is the default welcome page.</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html lang=&quot;en&quot;&gt;</div><div class="line">&lt;head&gt;</div><div class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</div><div class="line">    &lt;title&gt;Yuzuuu&lt;/title&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line">    &lt;p&gt;Hello Yuzu!&lt;/p&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
 <p>If you start BlogDemoApplication.main(), and go to <a href="localhost:8080" target="_blank" rel="external">localhost</a>, you will be able to see your web app up and running!</p>
+<p>With the help of Thymeleaf, you can serve static html files using controller. All html files should be placed in resources/templates/ folder.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">@Controller</div><div class="line">public class MyController &#123;</div><div class="line"></div><div class="line">    @RequestMapping(&quot;/another-page&quot;)</div><div class="line">    public String anotherPage() &#123;</div><div class="line">        return &quot;another-page&quot;;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>MyController.java</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html xmlns:th=&quot;http://www.thymeleaf.org&quot;&gt;</div><div class="line">&lt;head lang=&quot;en&quot;&gt;</div><div class="line">    &lt;meta charset=&quot;UTF-8&quot;/&gt;</div><div class="line">    &lt;title&gt;Another Page&lt;/title&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line">    &lt;p&gt;This is another page!&lt;/p&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
+<p>resources/templates/another-page.html</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zzzliyang.github.io/2017/03/18/spring-boot/" data-id="cj0epdlcz0001m499z0x6whec" class="article-share-link">Share</a>
+      <a data-url="https://zzzliyang.github.io/2017/03/18/spring-boot/" data-id="cj0f79d240000fw99f1g9op3t" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -143,7 +148,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://zzzliyang.github.io/2017/03/18/hello-world/" data-id="cj0epdlcv0000m499zj0uqnls" class="article-share-link">Share</a>
+      <a data-url="https://zzzliyang.github.io/2017/03/18/hello-world/" data-id="cj0f79d280001fw99oxeq9l3j" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -178,7 +183,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Articles récents</h3>
     <div class="widget">
       <ul>
         
@@ -203,7 +208,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2017 Liyang<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
